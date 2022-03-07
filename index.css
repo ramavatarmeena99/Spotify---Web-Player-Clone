@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 20%;
+  height: 100vh;
+}
+.left .leftFixed {
+  width: 20%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+}
+.logo {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo img {
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+  padding-left: 25px;
+}
+.yourPlaySong {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+.yourPlaySong .home {
+  flex: 1;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.yourPlaySong .home img {
+  width: auto;
+  height: auto;
+  padding-left: 20px;
+}
+.yourPlaySong .home p {
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.yourPlaySong .home p:hover {
+  transform: scale(1.05);
+}
+.createPlalist {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+.createPlalist .home {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+}
+.createPlalist .home img {
+  width: auto;
+  height: auto;
+  padding-left: 20px;
+}
+.createPlalist .home p {
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.createPlalist .home p:hover {
+  transform: scale(1.05);
+}
+.right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightHeader {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #535353;
+}
+.rightHeader-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rightHeader-left .backArrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  background-color: #121212;
+
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.rightHeader-left .nextArrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #121212;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.rightHeader-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.rightHeader-right p {
+  font-size: 13px;
+  font-weight: 300;
+  padding-right: 15px;
+  cursor: default;
+  color: white;
+}
+.rightHeader-right p:hover {
+  transform: scale(1.05);
+}
+.rightHeader-right button {
+  width: 18%;
+  height: 35px;
+  font-size: 14px;
+  margin: 15px;
+  /* margin-right: 10px; */
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.rightHeader-right button:hover {
+  transform: scale(1.1);
+}
+
+.playSongs {
+  width: 100%;
+  height: auto;
+  background-color: gray;
+}
+.indiasBest {
+  width: 100%;
+  height: auto;
+  /* background-color: brown; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.indiasBest .first {
+  width: 100%;
+  height: 15%;
+
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.indiasBest .first .charts {
+  font-size: 25px;
+  padding-left: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.indiasBest .first h1 {
+  font-size: 15px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.indiasBest .first h1:hover {
+  transform: scale(1.07);
+}
+.albums {
+  width: 98%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.albums .first {
+  flex: 1;
+  flex-basis: 180px;
+  height: 95%;
+  background-color: #181818;
+  margin: 5px 5px;
+  /* margin: 20px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.albums .first:hover {
+  background-color: #2a2a2a;
+}
+.albums .first .imgDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.albums .first .imgDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.albums .first .textResize {
+  width: 80%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.albums .first .textResize h1 {
+  font-size: 15px;
+  padding-bottom: 10px;
+  color: white;
+}
+.albums .first .textResize p {
+  font-size: 14px;
+  color: lightgrey;
+  text-align: left;
+}
